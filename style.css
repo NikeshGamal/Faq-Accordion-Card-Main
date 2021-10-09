@@ -38,4 +38,9 @@ main{
     height: 0px;
     border-bottom: 1px solid hsl(240, 5%, 91%);
     max-width:95%;
+}  
+.container .active{
+   max-height: 370px;
+   border-bottom: 1px solid hsl(240, 5%, 91%);
+   max-width:95%;
 }
