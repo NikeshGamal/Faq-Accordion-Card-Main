@@ -33,7 +33,7 @@ main{
 }
 
 .container .answer{
-    margin: 0.8rem auto;
+  margin: 0.7rem auto;
     overflow: hidden;
     height: 0px;
     border-bottom: 1px solid hsl(240, 5%, 91%);
@@ -43,4 +43,9 @@ main{
    max-height: 370px;
    border-bottom: 1px solid hsl(240, 5%, 91%);
    max-width:95%;
+    font-family:Kumbh Sans;
+   font-size:1rem;
+   font-weight:400;
+   margin: 0.7rem auto;
+   color: hsl(238, 29%, 16%);
 }

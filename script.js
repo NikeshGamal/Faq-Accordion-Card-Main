@@ -7,11 +7,14 @@ for(let i=0; i<svg.length; i++){
 
         if( ans[i].className ==="answer"){
             ans[i].classList.toggle('active');
+            svg[i].classList.add("turn");
         }else{
             ans[i].classList.toggle('answer');
+            svg[i].classList.remove("turn");
         }
         
         // console.log(e.target);
     });
 }
+ 
  
