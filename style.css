@@ -1,34 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
 *{
+
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;    
 }
 
 body{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 main{
-    margin: 25% 0px;
-   width: 90%;  
-   height: 80%;  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 35% 0px 29%;
+   width: 90vw;  
+   background-color: white;
+   padding: 2rem 1rem;
+   border-radius: 18px;
+}
+
+.top_svg{
+    position: absolute;
+    top: 3%;
+}
+.shadow{
+    position: absolute;
+    top:16%;
+    left: 17%;
+    margin-bottom: 4rem;
 }
 
 .title{
+    z-index: 999;
+    margin: 2rem;
     text-transform:uppercase;
     text-align: center;
     font-family:Kumbh Sans;
-   font-size:1.7rem;
-   font-weight: 700;
+   font-size:2rem;
+   font-weight: 900;
 }
 .container .faq{
     text-align: left;
    display: flex;
    font-family:Kumbh Sans;
-   font-size:1rem;
+   font-size:0.9rem;
    font-weight:400;
     justify-content: space-between;
 
@@ -37,7 +60,7 @@ main{
     text-align: left;
    display: flex;
    font-family:Kumbh Sans;
-   font-size:1rem;
+   font-size:0.9rem;
    font-weight:800;
     justify-content: space-between;
 }
@@ -52,11 +75,12 @@ main{
    border-bottom: 1px solid hsl(240, 5%, 91%);
    max-width:95%;
     font-family:Kumbh Sans;
-   font-size:1rem;
+   font-size:0.9rem;
    font-weight:400;
    margin: 0.7rem auto;
    color: hsl(238, 29%, 16%);
-   max-height: 370px;
+   max-height: 100px;
+   
 }
 
 
