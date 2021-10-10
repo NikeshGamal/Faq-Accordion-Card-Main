@@ -25,22 +25,30 @@ main{
    font-weight: 700;
 }
 .container .faq{
+    text-align: left;
+   display: flex;
+   font-family:Kumbh Sans;
+   font-size:1rem;
+   font-weight:400;
+    justify-content: space-between;
+
+}
+.active .faq{
+    text-align: left;
    display: flex;
    font-family:Kumbh Sans;
    font-size:1rem;
    font-weight:800;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-
-.container .answer{
-  margin: 0.7rem auto;
-    overflow: hidden;
+ .container .answer{
+   margin: 0.7rem auto;
+   overflow: hidden;
     height: 0px;
     border-bottom: 1px solid hsl(240, 5%, 91%);
     max-width:95%;
 }  
-.container .active{
-   max-height: 370px;
+.active .answer{ 
    border-bottom: 1px solid hsl(240, 5%, 91%);
    max-width:95%;
     font-family:Kumbh Sans;
@@ -48,4 +56,17 @@ main{
    font-weight:400;
    margin: 0.7rem auto;
    color: hsl(238, 29%, 16%);
+   max-height: 370px;
+}
+
+
+.container .svg svg{
+    /* border: 1px solid orange; */
+    transition: transform .5s ease;
+    transform: rotate(0deg);
+ }
+.active .svg svg{
+    /* border: 1px solid orange; */
+   transform: rotate(180deg);
+   transition: transform .5s ease;
 }
