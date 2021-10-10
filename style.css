@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
 *{
-
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;    
@@ -26,18 +25,17 @@ main{
    padding: 2rem 1rem;
    border-radius: 18px;
 }
-
-.top_svg{
-    position: absolute;
-    top: 3%;
-}
-.shadow{
-    position: absolute;
-    top:16%;
-    left: 17%;
-    margin-bottom: 4rem;
-}
-
+    
+ .top_svg{
+        position: absolute;
+        top: 3%;
+    }
+    .shadow{
+        position: absolute;
+        top:16%;
+        left: 17%;
+        margin-bottom: 4rem;
+    }
 .title{
     z-index: 999;
     margin: 2rem;
