@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
 *{
+    /* border: 1px solid black; */
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;    
@@ -20,21 +21,32 @@ main{
     align-content: center;
     flex-direction: column;
     margin: 35% 0px 29%;
-   width: 90vw;  
+   width: 90%;  
    background-color: white;
    padding: 2rem 1rem;
    border-radius: 18px;
 }
     
  .top_svg{
+         width: 70%;
+         height: 32%;
         position: absolute;
-        top: 3%;
-    }
+        top: 1%;
+        background-image: url("./images/illustration-woman-online-mobile.svg");
+        background-size: 90% 80%;
+        background-repeat: no-repeat; 
+        background-position: center; 
+}
     .shadow{
+        width: 240px;
+        height: 210px;
         position: absolute;
-        top:16%;
-        left: 17%;
+        top:10%;
+        left: 19%;
         margin-bottom: 4rem;
+        background-image: url("./images/bg-pattern-mobile.svg");
+        background-repeat: no-repeat; 
+        background-position: center; 
     }
 .title{
     z-index: 999;
@@ -92,3 +104,141 @@ main{
    transform: rotate(180deg);
    transition: transform .5s ease;
 }
+@media only screen and (min-width: 1090px) {
+    body{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        overflow: hidden;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      height:73%;
+      width: 63%;
+    }
+
+
+      
+ .top_svg{
+    width: 410px;
+    height: 380px;
+   background-image: url("./images/illustration-woman-online-desktop.svg");
+   background-repeat: no-repeat; 
+   background-size: 95% 85%;
+   background-position: center; 
+}
+.shadow{
+   width: 240px;
+   height: 210px;
+   margin-bottom: 4rem;
+   background-image: url("./images/bg-pattern-desktop.svg");
+   background-repeat: no-repeat; 
+   background-position: center; 
+}
+    .svg_box{
+     
+        width: 50%;
+        position: relative;
+    }
+
+    .svg_box .top_svg{
+        position: absolute;
+        top: 0px;
+       left: -20%;
+    }
+    .shadow{
+        position: absolute;
+        top: -86%;
+         left: -139%;
+    }
+
+    .body_container{
+   
+        width: 50%;
+    }
+
+    .title{
+        position: relative;
+        left: -8%;
+        text-align: left;
+    }
+
+.container{
+   margin: 5% 0px;
+}
+  }
+  
+ 
+     
+@media only screen and (max-width: 780px) {    
+    body{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        overflow: hidden;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      height:73%;
+      width: 63%;
+    }
+
+
+      
+ .top_svg{
+    width: 410px;
+    height: 380px;
+   background-image: url("./images/illustration-woman-online-desktop.svg");
+   background-repeat: no-repeat; 
+   background-size: 95% 85%;
+   background-position: center; 
+}
+.shadow{
+   width: 240px;
+   height: 210px;
+   margin-bottom: 4rem;
+   background-image: url("./images/bg-pattern-desktop.svg");
+   background-repeat: no-repeat; 
+   background-position: center; 
+}
+    .svg_box{
+     
+        width: 50%;
+        position: relative;
+    }
+
+    .svg_box .top_svg{
+        position: absolute;
+        top: 0px;
+       left: -20%;
+    }
+    .shadow{
+        position: absolute;
+        top: -86%;
+         left: -139%;
+    }
+
+    .body_container{
+   
+        width: 50%;
+    }
+
+    .title{
+        position: relative;
+        left: -8%;
+        text-align: left;
+    }
+
+.container{
+   margin: 5% 0px;
+}
+  }
+  
