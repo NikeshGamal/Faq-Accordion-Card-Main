@@ -28,21 +28,24 @@ main{
 }
     
  .top_svg{
-         width: 70%;
-         height: 32%;
-        position: absolute;
-        top: 1%;
+     margin: 0px auto;
+     border: 1px solid black;
+         width:80%;
+         height: 96%;
+        position: relative;
+        top: -33%;
         background-image: url("./images/illustration-woman-online-mobile.svg");
-        background-size: 90% 80%;
+        background-size:100%;
         background-repeat: no-repeat; 
-        background-position: center; 
+        /* background-position: center;  */
 }
     .shadow{
+        border: 1px solid orange;
         width: 240px;
         height: 210px;
-        position: absolute;
+        /* position: absolute;
         top:10%;
-        left: 19%;
+        left: 19%; */
         margin-bottom: 4rem;
         background-image: url("./images/bg-pattern-mobile.svg");
         background-repeat: no-repeat; 
@@ -173,8 +176,7 @@ main{
   }
   
  
-     
-@media only screen and (max-width: 780px) {    
+  @media only screen and (max-width: 1090px) and (min-width: 780px) {    
     body{
         overflow: hidden;
         display: flex;
@@ -184,11 +186,11 @@ main{
 
     main {
         overflow: hidden;
-      background-color: white;
+      background-color: cyan;
       display: flex;
       flex-direction: row;
-      height:73%;
-      width: 63%;
+      height:40%vw;
+      width: 83%;
     }
 
 
@@ -198,8 +200,8 @@ main{
     height: 380px;
    background-image: url("./images/illustration-woman-online-desktop.svg");
    background-repeat: no-repeat; 
-   background-size: 95% 85%;
-   background-position: center; 
+   background-size: 85% 75%;
+   background-position: 0%; 
 }
 .shadow{
    width: 240px;
@@ -240,5 +242,44 @@ main{
 .container{
    margin: 5% 0px;
 }
+  }
+  
+  
+  @media only screen and (max-width: 760px) and (min-width: 520px) {    
+    body{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        overflow: hidden;
+      background-color: cyan;
+      display: flex;
+      flex-direction: row;
+      height:40%vw;
+      width: 83%;
+    }
+      
+ .top_svg{
+   
+     margin: 0px auto;
+    border: 1px solid black;
+    width: 410px;
+    height: 380px;
+   background-image: url("./images/illustration-woman-online-desktop.svg");
+   background-repeat: no-repeat; 
+   background-size: 85% 75%;
+   background-position: 0%; 
+}
+.shadow{
+   width: 240px;
+   height: 210px;
+   margin-bottom: 4rem;
+   background-image: url("./images/bg-pattern-desktop.svg");
+   background-repeat: no-repeat; 
+   background-position: center; 
+}
+    
   }
   
