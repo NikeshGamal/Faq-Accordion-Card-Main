@@ -1,59 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
 *{
-    /* border: 1px solid black; */
+  /* border: 1px solid black; */
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;    
 }
 
+html{
+    min-width: 421px;
+}
+
 body{
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
+    padding: 8em 0px 0em;
+    width: 100%;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-content: center;
     background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
+
 main{
+    position: relative;
+    margin-bottom: 3em;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    margin: 35% 0px 29%;
-   width: 90%;  
+    width: 90%;
+     max-width: 80%;
    background-color: white;
-   padding: 2rem 1rem;
+   padding: 1em;
    border-radius: 18px;
 }
-    
+  
+.svg_box{
+    margin: 0 auto;
+    position: relative;
+    top:-4.6em;
+    max-height: 470px;
+}
+
  .top_svg{
-        position: absolute;
-        top: 3%;
+     padding: 0px;
+     width: 104%;
     }
+
     .shadow{
-        position: absolute;
-        top:16%;
-        left: 17%;
-        margin-bottom: 4rem;
+     margin: 0px auto;
+     padding: 0px;
+     width: 90%;
+     position: relative;
+    top:-6em;
+    padding-left: 1em;
     }
+
+.body_container{
+    margin-bottom: 1.5em;
+    position: relative;
+    top: -7.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 420px;
+    min-height: 70%;
+}
+
 .title{
-    z-index: 999;
-    margin: 2rem;
+    margin: 1em;
     text-transform:uppercase;
     text-align: center;
     font-family:Kumbh Sans;
    font-size:2rem;
    font-weight: 900;
 }
+
 .container .faq{
+    color: rgb(121, 121, 121);
     text-align: left;
    display: flex;
    font-family:Kumbh Sans;
    font-size:0.9rem;
    font-weight:400;
     justify-content: space-between;
-
+}
+.container .faq:hover{
+    color: red;
 }
 .active .faq{
     text-align: left;
@@ -64,22 +101,22 @@ main{
     justify-content: space-between;
 }
  .container .answer{
-   margin: 0.7rem auto;
+   margin: 1em auto;
    overflow: hidden;
     height: 0px;
     border-bottom: 1px solid hsl(240, 5%, 91%);
     max-width:95%;
+    
 }  
 .active .answer{ 
+    color: rgb(121, 121, 121);
    border-bottom: 1px solid hsl(240, 5%, 91%);
    max-width:95%;
     font-family:Kumbh Sans;
    font-size:0.9rem;
    font-weight:400;
    margin: 0.7rem auto;
-   color: hsl(238, 29%, 16%);
    max-height: 100px;
-   
 }
 
 
@@ -93,53 +130,131 @@ main{
    transform: rotate(180deg);
    transition: transform .5s ease;
 }
-@media only screen and (min-width: 780px) {
-    body{
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+@media screen and (min-width:860px){
+
+ 
+body{
+    padding: 0em 0px 0em;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+main{
+   padding: 0px;
+    max-height: 460px;
+    max-width: 860px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  
+.svg_box{
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+    width: 50%;
+    left: -9rem;
+}
+
+ .top_svg{
+     padding: 0px;
+     width: 100%;
     }
 
-    main {
-        overflow: hidden;
-      background-color: white;
-      display: flex;
-      flex-direction: row;
-      height:73%;
-      width: 63%;
+    .top_svg img{
+        width: 65%;
+        object-fit: cover;   
     }
 
-    .svg_box{
-     
-        width: 50%;
-        position: relative;
+    .top_svg img{
+        width: 65%;
+        object-fit: cover;   
     }
 
-    .svg_box .top_svg{
-        position: absolute;
-        top: 0px;
-       left: -20%;
+.body_container{
+    margin-bottom: 1.5em;
+   position: relative;
+   top: 0px;
+    min-width:45%;
+    min-height: 70%;
+    padding: 1.5em;
+}
+  
+
+.svg_box{
+    padding: 3em 2em;
+    margin: 0 auto;
+    position: relative;
+}
+
+ .top_svg{
+
+     padding-top: 0.6em;
+     width: 135%;
     }
+
+    .top_svg img{
+        width: 95%;
+        object-fit: cover;
+    }
+
     .shadow{
-        position: absolute;
-        top: -86%;
-         left: -139%;
+     width: 135%;
+
     }
 
-    .body_container{
-   
-        width: 50%;
+    .shadow img{
+        position: relative;
+        top: -2.7rem;
+        padding-left: 1em;
+        width: 95%;
+        object-fit: cover;
     }
 
     .title{
-        position: relative;
-        left: -8%;
         text-align: left;
+        margin:  0px 0px  1em 0px; 
+        font-family:Kumbh Sans;
+       font-size:1.6rem;
+       font-weight: 900;
+    }
+    .container .faq{
+        color: rgb(121, 121, 121);
+        text-align: left;
+       display: flex;
+       font-size:0.87rem;
+        justify-content: space-between;
+    
+    }
+    .active .faq{
+       display: flex;
+       font-family:Kumbh Sans;
+       font-size:0.87rem;
+       font-weight:800;
+        justify-content: space-between;
+    }
+     .container .answer{
+       margin: 0.6em auto;
+       overflow: hidden;
+        height: 0px;
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+        max-width:95%;
+    }  
+    .active .answer{ 
+       border-bottom: 1px solid hsl(240, 5%, 91%);
+       max-width:95%;
+       font-family:Kumbh Sans;
+       font-size:0.81rem;
+       font-weight:400;
+       margin: 0.4em auto;
+       color: hsl(238, 29%, 16%);
+       max-height: 100px;
+       color: rgb(121, 121, 121);
+       
     }
 
-.container{
-   margin: 5% 0px;
 }
-  }
-  
