@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
 *{
-    /* border: 1px solid black; */
+border: 1px solid black;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;    
@@ -31,7 +31,7 @@ main{
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    /* margin: 8em 0px 0em; */
+ 
    width: 90%;
    max-height: 660px; 
    background-color: white;
@@ -40,7 +40,6 @@ main{
 }
   
 .svg_box{
-    /* border: 1px solid orange; */
     margin: 0 auto;
     position: relative;
     top:-3.4em;
@@ -50,10 +49,6 @@ main{
 
      padding: 0px;
      width: 100%;
-      /* background: url("/images/illustration-woman-online-mobile.svg");
-       background-repeat: no-repeat;
-       back
-       background-position: 40% -4rem; */
     }
     .shadow{
      margin: 0px auto;
@@ -120,4 +115,136 @@ main{
    color: hsl(238, 29%, 16%);
    max-height: 100px;
    
+}
+
+@media screen and (min-width:860px){
+
+ 
+body{
+    padding: 0em 0px 0em;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+main{
+   padding: 0px;
+    max-height: 460px;
+    max-width: 860px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  
+.svg_box{
+    border: 1px solid orange;
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+    width: 50%;
+    left: -9rem;
+}
+
+ .top_svg{
+     padding: 0px;
+     width: 100%;
+    }
+
+    .top_svg img{
+        width: 65%;
+        object-fit: cover;   
+    }
+
+    .top_svg img{
+        width: 65%;
+        object-fit: cover;   
+    }
+
+.body_container{
+    margin-bottom: 1.5em;
+   position: relative;
+   top: 0px;
+    min-width:45%;
+    border: 1px solid magenta;
+    min-height: 70%;
+    padding: 1.5em;
+}
+
+
+  
+
+.svg_box{
+    padding: 3em 2em;
+    margin: 0 auto;
+    position: relative;
+}
+
+ .top_svg{
+
+     padding-top: 0.6em;
+     width: 142%;
+    }
+
+    .top_svg img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .shadow{
+     width: 142%;
+
+    }
+
+    .shadow img{
+        position: relative;
+        top: -2.7rem;
+        padding-left: 1em;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .title{
+        text-align: left;
+        margin:  0px 0px  1em 0px; 
+        font-family:Kumbh Sans;
+       font-size:1.6rem;
+       font-weight: 900;
+    }
+    .container .faq{
+        color: rgb(121, 121, 121);
+        text-align: left;
+       display: flex;
+       font-size:0.9rem;
+        justify-content: space-between;
+    
+    }
+    .active .faq{
+       display: flex;
+       font-family:Kumbh Sans;
+       font-size:0.9rem;
+       font-weight:800;
+        justify-content: space-between;
+    }
+     .container .answer{
+       margin: 0.4em auto;
+       overflow: hidden;
+        height: 0px;
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+        max-width:95%;
+    }  
+    .active .answer{ 
+       border-bottom: 1px solid hsl(240, 5%, 91%);
+       max-width:95%;
+        font-family:Kumbh Sans;
+       font-size:0.83rem;
+       font-weight:400;
+       margin: 0.4em auto;
+       color: hsl(238, 29%, 16%);
+       max-height: 100px;
+       
+    }
+
 }
