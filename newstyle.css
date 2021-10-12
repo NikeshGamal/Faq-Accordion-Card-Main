@@ -7,39 +7,79 @@
   box-sizing: border-box;    
 }
 
-body{
-    width: 100vw;
+/* html{
+    min-width: 437px;
     height: 100vh;
+} */
+
+body{
+    height: 100%;
+    padding: 8em 0px 0em;
+    width: 100%;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-content: center;
     background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
+
 main{
+    position: relative;
+    margin-bottom: 3em;
+    max-width: 470px;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    margin: 35% 0px 29%;
-   width: 90%;  
+    /* margin: 8em 0px 0em; */
+   width: 90%;
+   max-height: 660px; 
    background-color: white;
-   padding: 2rem 1rem;
+   padding: 1em;
    border-radius: 18px;
 }
-    
+  
+.svg_box{
+    /* border: 1px solid orange; */
+    margin: 0 auto;
+    position: relative;
+    top:-3.4em;
+}
+
  .top_svg{
-        position: absolute;
-        top: 3%;
+
+     padding: 0px;
+     width: 100%;
+      /* background: url("/images/illustration-woman-online-mobile.svg");
+       background-repeat: no-repeat;
+       back
+       background-position: 40% -4rem; */
     }
     .shadow{
-        position: absolute;
-        top:16%;
-        left: 17%;
-        margin-bottom: 4rem;
+     margin: 0px auto;
+     padding: 0px;
+     width: 90%;
+     position: relative;
+    top:-6em;
+    padding-left: 1em;
     }
+
+.body_container{
+    margin-bottom: 1.5em;
+    position: relative;
+    top: -7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 420px;
+    min-height: 70%;
+}
+
 .title{
-    z-index: 999;
-    margin: 2rem;
+    margin: 1em;
     text-transform:uppercase;
     text-align: center;
     font-family:Kumbh Sans;
@@ -64,7 +104,7 @@ main{
     justify-content: space-between;
 }
  .container .answer{
-   margin: 0.7rem auto;
+   margin: 1em auto;
    overflow: hidden;
     height: 0px;
     border-bottom: 1px solid hsl(240, 5%, 91%);
@@ -81,65 +121,3 @@ main{
    max-height: 100px;
    
 }
-
-
-.container .svg svg{
-    /* border: 1px solid orange; */
-    transition: transform .5s ease;
-    transform: rotate(0deg);
- }
-.active .svg svg{
-    /* border: 1px solid orange; */
-   transform: rotate(180deg);
-   transition: transform .5s ease;
-}
-@media only screen and (min-width: 780px) {
-    body{
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    main {
-        overflow: hidden;
-      background-color: white;
-      display: flex;
-      flex-direction: row;
-      height:73%;
-      width: 63%;
-    }
-
-    .svg_box{
-     
-        width: 50%;
-        position: relative;
-    }
-
-    .svg_box .top_svg{
-        position: absolute;
-        top: 0px;
-       left: -20%;
-    }
-    .shadow{
-        position: absolute;
-        top: -86%;
-         left: -139%;
-    }
-
-    .body_container{
-   
-        width: 50%;
-    }
-
-    .title{
-        position: relative;
-        left: -8%;
-        text-align: left;
-    }
-
-.container{
-   margin: 5% 0px;
-}
-  }
-  
