@@ -41,14 +41,14 @@ main{
 .svg_box{
     margin: 0 auto;
     position: relative;
-    top:-3.4em;
+    top:-3.7em;
 }
 
  .top_svg{
-
      padding: 0px;
-     width: 100%;
+     width: 104%;
     }
+
     .shadow{
      margin: 0px auto;
      padding: 0px;
@@ -61,7 +61,7 @@ main{
 .body_container{
     margin-bottom: 1.5em;
     position: relative;
-    top: -7rem;
+    top: -7.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,14 +80,18 @@ main{
    font-size:2rem;
    font-weight: 900;
 }
+
 .container .faq{
+    color: rgb(121, 121, 121);
     text-align: left;
    display: flex;
    font-family:Kumbh Sans;
    font-size:0.9rem;
    font-weight:400;
     justify-content: space-between;
-
+}
+.container .faq:hover{
+    color: red;
 }
 .active .faq{
     text-align: left;
@@ -103,19 +107,30 @@ main{
     height: 0px;
     border-bottom: 1px solid hsl(240, 5%, 91%);
     max-width:95%;
+    
 }  
 .active .answer{ 
+    color: rgb(121, 121, 121);
    border-bottom: 1px solid hsl(240, 5%, 91%);
    max-width:95%;
     font-family:Kumbh Sans;
    font-size:0.9rem;
    font-weight:400;
    margin: 0.7rem auto;
-   color: hsl(238, 29%, 16%);
    max-height: 100px;
-   
 }
 
+
+.container .svg svg{
+    /* border: 1px solid orange; */
+    transition: transform .5s ease;
+    transform: rotate(0deg);
+ }
+.active .svg svg{
+    /* border: 1px solid orange; */
+   transform: rotate(180deg);
+   transition: transform .5s ease;
+}
 @media screen and (min-width:860px){
 
  
