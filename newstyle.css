@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
 *{
-border: 1px solid black;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;    
@@ -140,7 +139,6 @@ main{
 }
   
 .svg_box{
-    border: 1px solid orange;
     margin: 0 auto;
     position: relative;
     top: 0px;
@@ -168,12 +166,9 @@ main{
    position: relative;
    top: 0px;
     min-width:45%;
-    border: 1px solid magenta;
     min-height: 70%;
     padding: 1.5em;
 }
-
-
   
 
 .svg_box{
@@ -185,16 +180,16 @@ main{
  .top_svg{
 
      padding-top: 0.6em;
-     width: 142%;
+     width: 135%;
     }
 
     .top_svg img{
-        width: 100%;
+        width: 95%;
         object-fit: cover;
     }
 
     .shadow{
-     width: 142%;
+     width: 135%;
 
     }
 
@@ -202,7 +197,7 @@ main{
         position: relative;
         top: -2.7rem;
         padding-left: 1em;
-        width: 100%;
+        width: 95%;
         object-fit: cover;
     }
 
@@ -217,33 +212,35 @@ main{
         color: rgb(121, 121, 121);
         text-align: left;
        display: flex;
-       font-size:0.9rem;
+       font-size:0.87rem;
         justify-content: space-between;
     
     }
     .active .faq{
        display: flex;
        font-family:Kumbh Sans;
-       font-size:0.9rem;
+       font-size:0.87rem;
        font-weight:800;
         justify-content: space-between;
     }
      .container .answer{
-       margin: 0.4em auto;
+       margin: 0.6em auto;
        overflow: hidden;
         height: 0px;
         border-bottom: 1px solid hsl(240, 5%, 91%);
         max-width:95%;
     }  
     .active .answer{ 
+
        border-bottom: 1px solid hsl(240, 5%, 91%);
        max-width:95%;
         font-family:Kumbh Sans;
-       font-size:0.83rem;
+       font-size:0.81rem;
        font-weight:400;
        margin: 0.4em auto;
        color: hsl(238, 29%, 16%);
        max-height: 100px;
+       color: rgb(121, 121, 121);
        
     }
 
