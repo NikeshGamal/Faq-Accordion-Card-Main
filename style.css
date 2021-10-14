@@ -8,7 +8,7 @@
 }
 
 html{
-    min-width: 421px;
+    min-width: 385px;
 }
 
 body{
@@ -41,6 +41,7 @@ main{
     margin: 0 auto;
     position: relative;
     top:-3.6em;
+    text-align: center;
     max-height: 470px;
 }
 
